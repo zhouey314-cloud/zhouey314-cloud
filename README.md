@@ -6,21 +6,22 @@ AI Applications · Agent Workflows · RAG · Eval Engineering · Product Deliver
 
 I build AI systems around real workflows, then turn what works into reusable assets.
 
-[Website](https://zhouey314-cloud.github.io/) · [X](https://x.com/UPing123zzz) · [GitHub](https://github.com/zhouey314-cloud)
+[Six-project visual tour](https://zhouey314-cloud.github.io/projects.html) · [Website](https://zhouey314-cloud.github.io/) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
 ## Selected Work
 
 ### AI Engineering
 
 - [AI Eval Engineering](https://github.com/zhouey314-cloud/ai-eval-engineering) — offline evaluation contracts, regression and release gates; model quality not claimed.
-- [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) — citation, access filter and no-answer lexical baseline on fictional documents.
+- [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) — citation, access filter and no-answer lexical preview; local real-embedding semantic/hybrid modes on fictional documents.
 - [Multi-Tenant AI Workflow SaaS](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas) — clean-room tenant isolation, knowledge inheritance, RBAC and review state machine.
 
 ### Product / Workflow
 
-- [AI CRM Sales Copilot](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) — synthetic CRM UI, local store and human-reviewed assistant mock.
-- [AI Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) — independent render adapter, material gap, QA and human review framework.
+- [AI CRM Sales Copilot](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) — synthetic CRM UI, local store, six-stage workflow and explicitly rule-based assistant mock.
+- [AI Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) — FFmpeg-rendered synthetic MP4, material gap, QA and human review framework.
 - [AI Recruitment Workflow Demo](https://github.com/zhouey314-cloud/ai-recruitment-workflow-demo) — fictional resumes, evidence trace and mandatory human decision gate.
+- [NovaMach Industrial](https://github.com/zhouey314-cloud/novamach-b2b-multilingual-demo) — fictional three-language B2B website and local RFQ demo; [live preview](https://0-1-b2b-demo-demo-novamach.vercel.app/).
 
 ### Personal Tools
 
