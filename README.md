@@ -15,7 +15,7 @@ I turn ambiguous business problems into runnable, testable AI products and workf
 | **AI Eval Engineering** | Keeps fixture checks separate from model-quality evidence | Python · JSONL | [Example report](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/example-report.md) | [Code](https://github.com/zhouey314-cloud/ai-eval-engineering) |
 | **Video Workflow Engine** | Asset-gap, real FFmpeg render, QA and human review | Python · FFmpeg | [Synthetic MP4](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/demo-output.mp4) | [Code](https://github.com/zhouey314-cloud/ai-video-workflow-engine) |
 | **AI CRM Sales Copilot** | Shared opportunity, stage, forecast and rule-guidance state | JavaScript · localStorage | [Try CRM](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/) | [Code](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) |
-| **Portable Agent Skills** | Single-purpose, copyable workflows with explicit inputs, outputs and failure paths | Markdown · Python | [Explore ten skills](https://github.com/zhouey314-cloud/ai-agent-skills/tree/portfolio-v2) | [Code](https://github.com/zhouey314-cloud/ai-agent-skills) |
+| **Portable Agent Skills** | Single-purpose, copyable workflows with explicit inputs, outputs and failure paths | Markdown · Python | [Explore ten skills](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills) | [Code](https://github.com/zhouey314-cloud/ai-agent-skills) |
 
 ## Engineering Focus
 
@@ -29,7 +29,7 @@ The [project index](PORTFOLIO.md) gives status, stack and evidence. Each flagshi
 
 ## Currently Building
 
-- [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills/pull/1): currently refining tests, examples and contribution paths; provider-backed model-quality validation remains pending.
+- [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills): ten documented workflows with offline contract checks and contribution paths; provider-backed model-quality validation remains pending.
 - Supporting projects include [Recruitment Review](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/), [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) and [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox).
 
 ## Writing / Open Source

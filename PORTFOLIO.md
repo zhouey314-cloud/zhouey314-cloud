@@ -2,7 +2,7 @@
 
 [Six-project visual hub](https://zhouey314-cloud.github.io/projects.html) · [90-second tour](#90-second-tour) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
-Status vocabulary: `LIVE_DEMO` is a public interactive preview, `LOCAL_RUNNABLE` a reproducible local tool, and `OFFLINE_ENGINEERING_DEMO` an offline artifact. None means customer production. Portfolio V2 site/profile changes are in pull requests until merged.
+Status vocabulary: `LIVE_DEMO` is a public interactive preview, `LOCAL_RUNNABLE` a reproducible local tool, and `OFFLINE_ENGINEERING_DEMO` an offline artifact. None means customer production.
 
 ## Flagship six
 
@@ -13,11 +13,11 @@ Status vocabulary: `LIVE_DEMO` is a public interactive preview, `LOCAL_RUNNABLE`
 | [AI Eval Engineering](https://github.com/zhouey314-cloud/ai-eval-engineering) | Distinguish fixture checks from model quality | Python, JSONL | [Example report](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/example-report.md) | 5 synthetic fixtures; MODEL_QUALITY=NOT_RUN | LOCAL_RUNNABLE |
 | [AI Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | Asset-gap, render and QA state | Python, FFmpeg | [Synthetic MP4](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/demo-output.mp4) | 25 tests; 6-second video; HUMAN_REVIEW | OFFLINE_ENGINEERING_DEMO |
 | [AI CRM Sales Copilot](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) | Shared opportunity/pipeline/forecast state | JavaScript, localStorage | [Pages](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/) | automated and browser/reload checks | LIVE_DEMO |
-| [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills/pull/1) | Reusable, explicit agent workflow contracts | Markdown, Python | [V2 PR](https://github.com/zhouey314-cloud/ai-agent-skills/pull/1) | 10 structural checks; 3 synthetic cases; model quality NOT_RUN | LOCAL_RUNNABLE |
+| [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills) | Reusable, explicit agent workflow contracts | Markdown, Python | [Skill catalog](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills) | 10 structural checks; 3 synthetic cases; model quality NOT_RUN | LOCAL_RUNNABLE |
 
 ## 90-second tour
 
-Start at the [visual hub](https://zhouey314-cloud.github.io/projects.html) after its V2 PR merges. Follow a public browser flow in Multi-Tenant Workflow; inspect RAG access-filtered retrieval; see Eval's explicit quality gate; watch Video's synthetic FFmpeg output; try CRM's rule-based sales flow; then clone Portable Agent Skills and run its offline contract tests. Each repo explains its own limitations. The visuals and tests are engineering evidence, not user adoption, client acceptance or model success rates.
+Start at the [visual hub](https://zhouey314-cloud.github.io/projects.html). Follow a public browser flow in Multi-Tenant Workflow; inspect RAG access-filtered retrieval; see Eval's explicit quality gate; watch Video's synthetic FFmpeg output; try CRM's rule-based sales flow; then clone Portable Agent Skills and run its offline contract tests. Each repo explains its own limitations. The visuals and tests are engineering evidence, not user adoption, client acceptance or model success rates.
 
 ## Supporting projects
 
