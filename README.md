@@ -2,35 +2,42 @@
 
 ### AI-Native Builder
 
-AI Applications · Agent Workflows · RAG · Eval Engineering · Product Delivery
+I turn ambiguous business problems into runnable, testable AI products and workflows — then show the architecture, evidence and limits.
 
-I build AI systems around real workflows, then turn what works into reusable assets.
-
-[Six-project visual tour](https://zhouey314-cloud.github.io/projects.html) · [Website](https://zhouey314-cloud.github.io/) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
+[Explore six projects](https://zhouey314-cloud.github.io/projects.html) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
 ## Selected Work
 
-### AI Engineering
+| Project | What it solves | Stack | Demo | Repository |
+|---|---|---|---|---|
+| **Multi-Tenant Workflow** | Knowledge sharing with tenant isolation and human review gates | Node.js · JavaScript | [Try workflow](https://zhouey314-cloud.github.io/multi-tenant-ai-workflow-saas/) | [Code](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas) |
+| **Enterprise RAG Starter** | Access-filtered retrieval with citations and no-answer behavior | Python · local embeddings | [Lexical demo](https://zhouey314-cloud.github.io/enterprise-rag-starter/) | [Code](https://github.com/zhouey314-cloud/enterprise-rag-starter) |
+| **AI Eval Engineering** | Keeps fixture checks separate from model-quality evidence | Python · JSONL | [Example report](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/example-report.md) | [Code](https://github.com/zhouey314-cloud/ai-eval-engineering) |
+| **Video Workflow Engine** | Asset-gap, real FFmpeg render, QA and human review | Python · FFmpeg | [Synthetic MP4](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/demo-output.mp4) | [Code](https://github.com/zhouey314-cloud/ai-video-workflow-engine) |
+| **AI CRM Sales Copilot** | Shared opportunity, stage, forecast and rule-guidance state | JavaScript · localStorage | [Try CRM](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/) | [Code](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) |
+| **Portable Agent Skills** | Single-purpose, copyable workflows with explicit inputs, outputs and failure paths | Markdown · Python | [Explore ten skills](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills) | [Code](https://github.com/zhouey314-cloud/ai-agent-skills) |
 
-- [AI Eval Engineering](https://github.com/zhouey314-cloud/ai-eval-engineering) — offline evaluation contracts, regression and release gates; model quality not claimed.
-- [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) — citation, access filter and no-answer lexical preview; local real-embedding semantic/hybrid modes on fictional documents.
-- [Multi-Tenant AI Workflow SaaS](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas) — clean-room tenant isolation, knowledge inheritance, RBAC and review state machine.
+## Engineering Focus
 
-### Product / Workflow
+AI applications · agent workflows · RAG and retrieval · evaluation · automation · product delivery. I prioritize observable behavior over a large repository count: a working path, tests/evals matched to risk, clear failure states and a handoff another person can reproduce.
 
-- [AI CRM Sales Copilot](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) — synthetic CRM UI, local store, six-stage workflow and explicitly rule-based assistant mock.
-- [AI Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) — FFmpeg-rendered synthetic MP4, material gap, QA and human review framework.
-- [AI Recruitment Workflow Demo](https://github.com/zhouey314-cloud/ai-recruitment-workflow-demo) — fictional resumes, evidence trace and mandatory human decision gate.
-- [NovaMach Industrial](https://github.com/zhouey314-cloud/novamach-b2b-multilingual-demo) — fictional three-language B2B website and local RFQ demo; [live preview](https://0-1-b2b-demo-demo-novamach.vercel.app/).
+## How I Build
 
-### Personal Tools
+`Context → Scope → Build → Test → Eval where needed → Human Review → Ship → Reuse`
 
-- [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) — idea-first writing workflow.
-- [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox) — local capture and keyword search for an explicitly selected vault.
-- [AI Director](https://github.com/zhouey314-cloud/ai_director) — timeline and media interchange prototype.
+The [project index](PORTFOLIO.md) gives status, stack and evidence. Each flagship repository has a case study, resume bullets and interview notes. Synthetic examples and disconnected integrations are labelled in their respective repositories.
 
-## How I Work
+## Currently Building
 
-`Real Problem → Scope → Build → Test → Eval → Human Review → Ship → Reuse`
+- [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills): ten documented workflows with offline contract checks and contribution paths; provider-backed model-quality validation remains pending.
+- Supporting projects include [Recruitment Review](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/), [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) and [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox).
 
-The public repositories separate runnable code, synthetic examples, local test results and real platform evidence. See the [Portfolio Index](PORTFOLIO.md) for stack, status and proof. No demo is presented as customer production usage.
+## Writing / Open Source
+
+I publish practical notes and reusable artifacts from work I can explain and verify. The [visual project tour](https://zhouey314-cloud.github.io/projects.html) is the quickest way in; the repositories contain the deeper technical evidence. Upstream-derived projects such as `dbskill` are not presented as my original work.
+
+## Website / Contact
+
+[Personal website](https://zhouey314-cloud.github.io/) · [X](https://x.com/UPing123zzz) · [GitHub](https://github.com/zhouey314-cloud)
+
+Open to discussing AI product engineering, FDE-style implementation and evidence-first delivery. Public demos are not claims of customer production use.
