@@ -4,7 +4,7 @@
 
 I turn ambiguous business problems into runnable, testable AI products and workflows — then show the architecture, evidence and limits.
 
-[Explore six projects](https://zhouey314-cloud.github.io/projects.html) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
+[Explore six flagships](https://zhouey314-cloud.github.io/projects.html) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
 ## Selected Work
 
@@ -30,7 +30,7 @@ The [project index](PORTFOLIO.md) gives status, stack and evidence. Each flagshi
 ## Currently Building
 
 - [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills): ten documented workflows with offline contract checks and contribution paths; provider-backed model-quality validation remains pending.
-- Supporting projects include [Recruitment Review](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/), [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) and [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox).
+- Supporting work: [Recruitment Review](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/) (synthetic decision support), [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) (local writing workflow), [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox) (selected-vault capture) and [NovaMach](https://0-1-b2b-demo-demo-novamach.vercel.app/) (fictional multilingual B2B demo). The [project index](PORTFOLIO.md) keeps the rest by status and evidence.
 
 ## Writing / Open Source
 
