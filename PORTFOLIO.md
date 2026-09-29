@@ -15,6 +15,19 @@ Status vocabulary: `LIVE_DEMO` is a public interactive preview, `LOCAL_RUNNABLE`
 | [AI CRM Sales Copilot](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) | Shared opportunity/pipeline/forecast state | JavaScript, localStorage | [Pages](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/) | automated and browser/reload checks | LIVE_DEMO |
 | [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills) | Reusable, explicit agent workflow contracts | Markdown, Python | [Skill catalog](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills) | 10 structural checks; 3 synthetic cases; model quality NOT_RUN | LOCAL_RUNNABLE |
 
+### Maintenance status
+
+These labels describe current focus, not production support or a release commitment. `ACTIVE DEVELOPMENT` means the next engineering limitation is being tracked here; `MAINTAINED` means existing contract/docs and fixes remain in scope; `STABLE DEMO` means the bounded demo is available without an active expansion claim.
+
+| Project | Maintenance status | Next boundary |
+|---|---|---|
+| AI Video Workflow Engine | ACTIVE DEVELOPMENT | Real-media validation, human review evidence, version decision |
+| Enterprise RAG Starter | ACTIVE DEVELOPMENT | Human-reviewed answerability cases, model-quality boundary, version decision |
+| Multi-Tenant Workflow | STABLE DEMO | Synthetic policy demo; no production auth |
+| AI Eval Engineering | STABLE DEMO | Fixture checks; model quality NOT_RUN |
+| AI CRM Sales Copilot | STABLE DEMO | Rule-based/local-only demo |
+| Portable Agent Skills | MAINTAINED | Offline contract kit; provider-backed quality NOT_RUN |
+
 ## 90-second tour
 
 Start at the [visual hub](https://zhouey314-cloud.github.io/projects.html). Follow a public browser flow in Multi-Tenant Workflow; inspect RAG access-filtered retrieval; see Eval's explicit quality gate; watch Video's synthetic FFmpeg output; try CRM's rule-based sales flow; then clone Portable Agent Skills and run its offline contract tests. Each repo explains its own limitations. The visuals and tests are engineering evidence, not user adoption, client acceptance or model success rates.

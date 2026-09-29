@@ -27,10 +27,14 @@ AI applications · agent workflows · RAG and retrieval · evaluation · automat
 
 The [project index](PORTFOLIO.md) gives status, stack and evidence. Each flagship repository has a case study, resume bullets and interview notes. Synthetic examples and disconnected integrations are labelled in their respective repositories.
 
-## Currently Building
+## Active Development
 
-- [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills): ten documented workflows with offline contract checks and contribution paths; provider-backed model-quality validation remains pending.
-- Supporting work: [Recruitment Review](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/) (synthetic decision support), [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) (local writing workflow), [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox) (selected-vault capture) and [NovaMach](https://0-1-b2b-demo-demo-novamach.vercel.app/) (fictional multilingual B2B demo). The [project index](PORTFOLIO.md) keeps the rest by status and evidence.
+| Project | Current status / version | Current issue | Next milestone |
+|---|---|---|---|
+| [Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | Offline synthetic tool; source `0.1.0` (historical GitHub demo Release `v1.0.0`) | Real-media validation and independent human acceptance are missing; version history needs a decision | Reproducible asset validation and human-reviewed render |
+| [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) | Public lexical demo + optional local semantic/hybrid; source unversioned (historical demo Release `v1.0.0`) | A valid citation can still accompany a non-answer; model answer quality is `NOT_RUN` | Human-reviewed answerability regression set |
+
+The other four flagships remain in [Selected Work](#selected-work); [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills) retains its contribution path and offline checks. Supporting work and maintenance categories are in the [project index](PORTFOLIO.md).
 
 ## Writing / Open Source
 
