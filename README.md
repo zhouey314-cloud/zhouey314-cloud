@@ -4,6 +4,8 @@
 
 I turn ambiguous business problems into runnable, testable AI products and workflows — then show the architecture, evidence and limits.
 
+**Contact / 联系我:** [Telegram @ethanyu520](https://t.me/ethanyu520) · [Email](mailto:zhouey314@gmail.com) · [WeChat QR / 微信二维码](#website--contact)
+
 [Explore six flagships](https://zhouey314-cloud.github.io/projects.html) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
 ## Selected Work
@@ -43,5 +45,13 @@ I publish practical notes and reusable artifacts from work I can explain and ver
 ## Website / Contact
 
 [Personal website](https://zhouey314-cloud.github.io/) · [X](https://x.com/UPing123zzz) · [GitHub](https://github.com/zhouey314-cloud)
+
+[Telegram @ethanyu520](https://t.me/ethanyu520) · [Email: zhouey314@gmail.com](mailto:zhouey314@gmail.com) · [WeChat / 微信：Ethan 恩宇](https://u.wechat.com/MJNJhDRZFiAFKD09uKIRGvM?s=3)
+
+<a href="https://u.wechat.com/MJNJhDRZFiAFKD09uKIRGvM?s=3">
+  <img src="assets/wechat-qr.svg" alt="Ethan 恩宇微信二维码" width="220">
+</a>
+
+微信扫码添加 Ethan 恩宇。
 
 Open to discussing AI product engineering, FDE-style implementation and evidence-first delivery. Public demos are not claims of customer production use.
