@@ -1,117 +1,68 @@
 # Resume Project Bank
 
-Pick two or three projects for a specific role. These are evidence notes and draft bullets, not claims of customer adoption. See the [full portfolio index](PORTFOLIO.md) for public links and status.
+Pick two or three projects appropriate to a role. These are evidence-backed engineering notes for a 编导 / AI Builder; demo evidence does not imply customer adoption or accepted commercial delivery. [Full index and sources](PORTFOLIO.md).
 
-## Flagship projects
-
-### Multi-Tenant Workflow
-
-- **Problem:** Shared knowledge and approval can cross tenant or role boundaries.
-- **Action:** Built a demo with role policy and a review-to-publish path.
-- **Engineering:** Node.js and browser flows use the same tenant, role and state rules.
-- **Evidence:** [Public demo](https://zhouey314-cloud.github.io/multi-tenant-ai-workflow-saas/) and [11 policy tests, including fail-closed role/unit checks](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas/pull/2).
-- **Boundary:** Demo role selectors are not production authentication.
-- **Resume bullet:** Built and tested a multi-tenant knowledge workflow with role checks and human review gates; documented the demo authentication boundary.
+## Selected three
 
 ### Enterprise RAG Starter
 
-- **Problem:** Retrieval answers need access filtering, citations and a no-answer path.
-- **Action:** Built lexical, local semantic and hybrid retrieval over fictional documents.
-- **Engineering:** Access control precedes retrieval output; citations and refusal behavior are explicit.
-- **Evidence:** [Repository and lexical demo](https://github.com/zhouey314-cloud/enterprise-rag-starter), [23 Python + 10 Node tests, four lexical and nine answerability cases](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/1), reported separately.
-- **Boundary:** The browser demo is lexical; local embedding mode is separate. No customer knowledge base or model-quality score.
-- **Resume bullet:** Implemented an access-filtered RAG starter with citations and no-answer behavior, verified with local tests and synthetic retrieval cases.
-
-### AI Eval Engineering
-
-- **Problem:** A passing fixture check can be mistaken for a passing model evaluation.
-- **Action:** Created an offline JSONL case, rubric and release-gate kit.
-- **Engineering:** Schema/provenance validation is separated from a provider-backed quality gate.
-- **Evidence:** [Example report](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/example-report.md) and [four validator regressions plus five synthetic fixtures](https://github.com/zhouey314-cloud/ai-eval-engineering/pull/2).
-- **Boundary:** Model quality is NOT_RUN without independent ground truth and a model run.
-- **Resume bullet:** Built an offline AI evaluation kit that separates deterministic fixture validation from unrun model-quality claims.
-
-### AI Video Workflow Engine
-
-- **Problem:** Missing assets, render failures and human QA need a recoverable path.
-- **Action:** Built an asset-gap, FFmpeg render and QA workflow.
-- **Engineering:** Python state transitions and output checks produce a reproducible synthetic render.
-- **Evidence:** [Six-second sample MP4](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/demo-output.mp4) and [36 tests, including CLI process exit/report consistency](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/2).
-- **Boundary:** The sample is synthetic; human acceptance and generated-video quality are not claimed.
-- **Resume bullet:** Designed and tested a Python video workflow that tracks missing assets, renders a synthetic FFmpeg sample and retains a human QA gate.
-
-### AI CRM Sales Copilot
-
-- **Problem:** Pipeline, forecast and guidance diverge when they use separate opportunity records.
-- **Action:** Built a browser demo around one local opportunity state.
-- **Engineering:** Six-stage transitions, local audit, manager forecast and deterministic rule guidance.
-- **Evidence:** [Live demo](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/), [seven storage-recovery scenarios](https://github.com/zhouey314-cloud/ai-crm-sales-copilot/pull/1); browser-local synthetic state.
-- **Boundary:** Synthetic records, localStorage, no production authentication or real model provider.
-- **Resume bullet:** Built a synthetic CRM workflow demo connecting pipeline transitions, forecast, audit and rule-based guidance on one browser-local state model.
-
-### Portable Agent Skills
-
-- **Problem:** Agent workflows are hard to reuse when inputs, outputs and failure paths are implicit.
-- **Action:** Wrote ten single-purpose, clean-room skill contracts.
-- **Engineering:** Markdown workflows plus offline Python structure and synthetic-fixture checks.
-- **Evidence:** [Skill catalog](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills): 10 skills + 3 synthetic fixtures checked under normal and optimized Python; [two validator regressions](https://github.com/zhouey314-cloud/ai-agent-skills/pull/2) prevent validation from disappearing with `-O`.
-- **Boundary:** Provider-backed model quality and real user adoption are NOT_RUN.
-- **Resume bullet:** Authored ten reusable agent workflow contracts with explicit inputs, outputs and failure paths, backed by offline validation and synthetic examples.
-
-## Supporting projects
-
-### Recruitment Review
-
-- **Problem:** Hiring reviewers need traceable evidence and a mandatory human decision.
-- **Action:** Built a synthetic evidence/risk review flow with reason and audit fields.
-- **Engineering:** Browser rules and Python checks have parity cases.
-- **Evidence:** [Live synthetic demo](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/), 13 unit tests, five fixtures and 36 parity cases.
-- **Boundary:** No real resumes, candidate decisions or validated model performance.
-- **Resume bullet:** Built a synthetic recruitment review demo that traces evidence and risk while keeping the final decision with a human reviewer.
-
-### Thought to X
-
-- **Problem:** A raw idea needs structure and editorial review before publication.
-- **Action:** Built a local idea-to-draft workflow and portable prompt set.
-- **Engineering:** Python CLI supports a no-key prompt-only path.
-- **Evidence:** [Example output](https://github.com/zhouey314-cloud/thought-to-x/blob/main/examples/destiny-example.md) and [13 offline tests plus installed-wheel verification](https://github.com/zhouey314-cloud/thought-to-x/pull/1); unchanged prompt assembly verified on three existing inputs.
-- **Boundary:** No automated platform posting; factual and voice approval remain human.
-- **Resume bullet:** Built a local idea-to-draft writing workflow with a portable CLI, tested prompt-only path and explicit human publishing gate.
-
-### Obsidian AI Inbox
-
-- **Problem:** Personal notes need a fast local capture and search path without broad vault access.
-- **Action:** Built capture and keyword-search flows for a selected vault.
-- **Engineering:** Local filesystem handling and a demo vault keep the interface inspectable.
-- **Evidence:** [Interface screenshot](https://github.com/zhouey314-cloud/obsidian-ai-inbox/blob/main/docs/inbox-demo.png) and [70 executions across 39 unique cases, including three hidden-dotfile privacy negatives](https://github.com/zhouey314-cloud/obsidian-ai-inbox/pull/1).
-- **Boundary:** Selected-vault access excludes hidden dotfiles; private vault data stays on device. No claim of reading an entire Obsidian installation.
-- **Resume bullet:** Built a local Obsidian inbox for selected-vault capture and keyword search, with a demo vault and local tests.
-
-### NovaMach
-
-- **Problem:** A B2B buyer needs to move from product discovery to a request for quotation across languages.
-- **Action:** Built a fictional three-language industrial catalog and RFQ flow.
-- **Engineering:** React, TypeScript and Vite with browser-local sample inquiry state.
-- **Evidence:** [Live fictional preview](https://0-1-b2b-demo-demo-novamach.vercel.app/) and lint, typecheck, build and smoke checks.
-- **Boundary:** Fictional brand, sample RFQs and no customer acceptance claim.
-- **Resume bullet:** Built a fictional multilingual B2B product demo with a local RFQ workflow and verified build path.
-
-### AI Director
-
-- **Problem:** Silence-based cuts need a timeline that can be inspected and exchanged with editing tools.
-- **Action:** Built an offline media/timeline prototype around a synthetic sample.
-- **Engineering:** FFmpeg detection feeds a keep-list, EDL and FCPXML; SRT requires transcription input.
-- **Evidence:** [Synthetic example and EDL](https://github.com/zhouey314-cloud/ai_director/tree/main/examples), [six tests and FCPXML XML/URI path checks](https://github.com/zhouey314-cloud/ai_director/pull/1).
-- **Boundary:** Prototype only; no actual editor-import acceptance. Edit quality and optional provider integration remain unverified.
-- **Resume bullet:** Built a media timeline prototype that converts detected silence into inspectable keep-lists and editing interchange files, with timestamp regression checks.
+- **Problem / action:** Build a bounded local retrieval reference where the caller cannot choose tenant/role, stale or unauthorized evidence cannot be cited, and unsupported questions can be refused.
+- **Engineering:** Trusted token provisioning, server-owned identity, ACL-before-ranking, SQLite revisions, MD/PDF/DOCX provenance, authorized FTS5/overlap RRF and exact evidence excerpts. [Code / architecture](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/adr-local-rag.md).
+- **Demo / evidence:** [Lexical preview](https://zhouey314-cloud.github.io/enterprise-rag-starter/), separate [local service / PDF-page regression](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/3), [candidate evaluation](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/4). 48 Python + 10 Node tests pass; the existing 4 lexical / 9 answerability cases are retained. The synthetic_unverified local candidate run is 60/62 over 56 distinct questions (required lexical-contract cases 60/60), with two semantic-paraphrase misses preserved and zero real-model calls. The user confirmed completing review of all 62 cases; no per-case adjudication or expected-answer edits are inferred. Provenance remains synthetic_unverified, not an independently verified Golden Set; enterprise and semantic quality are unverified.
+- **Boundary:** The browser demo is lexical; local exact extraction and synthetic gates are not semantic entailment or verified customer knowledge-base quality.
+- **Draft bullet:** Implemented a local authenticated retrieval reference with pre-ranking tenant/role filtering, versioned citations and refusal paths; kept mechanical tests, candidate evaluation, user-reported review completion and unresolved semantic misses distinct.
 
 ### RelayAudit / AgentGuard
 
-- **Problem:** Proxy headers can leak connection-scoped metadata across request/response boundaries.
-- **Action:** Fixed bidirectional hop-by-hop header filtering and covered controlled failures.
-- **Evidence:** [Focused repair and CI](https://github.com/zhouey314-cloud/relay-audit/pull/1), 115 controlled tests and local acceptance.
-- **Boundary:** Protocol observations do not establish upstream model identity, calibration accuracy or production reliability.
+- **Problem / action:** Observe a configured proxy route without adding hidden model requests, corrupting streamed entities or hiding transport failures behind observer failures.
+- **Engineering:** Fixed upstream routes, bounded independent queues, bidirectional hop-header filtering, fail-open observation, timeout/cancellation metadata and independent alerts. [Code](https://github.com/zhouey314-cloud/relay-audit).
+- **Demo / evidence:** [Pure synthetic QuickStart](https://github.com/zhouey314-cloud/relay-audit/blob/main/examples/guard-synthetic/README.md), [PR2 / 125 tests](https://github.com/zhouey314-cloud/relay-audit/pull/2), [three-version CI / downloadable fixtures](https://github.com/zhouey314-cloud/relay-audit/actions/runs/39608139134). Same-request C1/C8 direct/passive measurements show zero extra model requests and measurable overhead.
+- **Boundary:** Fake-key loopback mechanics, whole-process Python allocation measurements and protocol observations do not prove upstream identity, calibration accuracy or production capacity.
+- **Draft bullet:** Implemented and regression-tested passive proxy observation with entity preservation and explicit degradation; published reproducible latency/throughput/memory measurements alongside the zero-extra-request boundary.
+
+### AI Video Workflow Engine
+
+- **Problem / action:** Turn asset gaps, rendering failures, QA and packaging into reproducible CLI outcomes while retaining a human viewing gate.
+- **Engineering:** Python / FFmpeg, asset validation, output consistency and pack-safe delivery; [architecture](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/architecture.md).
+- **Demo / evidence:** [54-second original animation](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/c9e698de3880609014b0b83bf349a01dcad3af4d/examples/original_54s/sample.mp4), [source / assets / rights](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/README.md), [sample PR](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/4). 47 tests pass. The exact 54-second, nine-shot original animation is user-viewed APPROVED; [artifact-specific review](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/human-review.json) pins SHA256 `0a7f73e9a5a014a352aa5f27a2852b39e558546ccc38f93016785cf2fba0e1a9`. It is animation, not real-person talking-head footage or customer/model/commercial acceptance.
+- **Boundary:** The approved artifact is one specific animation, not real-person/client editing, publishing or commercial acceptance.
+- **Draft bullet:** Built and tested an offline video workflow with reliable process failures, reproducible FFmpeg output and a rights-documented animation sample; retained artifact-specific human approval.
+
+## Other flagships
+
+| Project / source | Engineering note / evidence | Resume boundary |
+|---|---|---|
+| [Multi-Tenant Workflow](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas) | Shared tenant/role/state policy and review gate; [11 policy tests](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas/pull/2) / [demo](https://zhouey314-cloud.github.io/multi-tenant-ai-workflow-saas/) | Demo selectors are not production auth |
+| [AI Eval Engineering](https://github.com/zhouey314-cloud/ai-eval-engineering) | Offline case/rubric kit; [4 validator regressions + 5 fixtures](https://github.com/zhouey314-cloud/ai-eval-engineering/pull/2) | MODEL_QUALITY=NOT_RUN |
+| [AI CRM Sales Copilot](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) | One local opportunity/pipeline/forecast state; [7 recovery scenarios](https://github.com/zhouey314-cloud/ai-crm-sales-copilot/pull/1) / [demo](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/) | Synthetic browser state and rule guidance |
+| [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills) | Ten explicit workflow contracts; [validator checks under normal/optimized Python](https://github.com/zhouey314-cloud/ai-agent-skills/pull/2) | No provider-backed quality/adoption claim |
+
+## Supporting
+
+| Source | Evidence-backed engineering note | Boundary |
+|---|---|---|
+| [Recruitment Review](https://github.com/zhouey314-cloud/ai-recruitment-workflow-demo) | Synthetic evidence/risk/human-decision flow; [demo](https://zhouey314-cloud.github.io/ai-recruitment-workflow-demo/), 13 tests / 36 parity cases | No real candidate decisions |
+| [Thought to X](https://github.com/zhouey314-cloud/thought-to-x) | Portable prompt-only CLI; [13 tests / installed wheel](https://github.com/zhouey314-cloud/thought-to-x/pull/1), unchanged assembled prompts | Human fact/voice approval; no automatic posting |
+| [Obsidian AI Inbox](https://github.com/zhouey314-cloud/obsidian-ai-inbox) | Selected-vault capture/search; [70 executions / 39 unique cases](https://github.com/zhouey314-cloud/obsidian-ai-inbox/pull/1) | Hidden dotfiles excluded; private notes remain local |
+| [NovaMach](https://github.com/zhouey314-cloud/novamach-b2b-multilingual-demo) | Fictional multilingual catalog/RFQ; [preview](https://0-1-b2b-demo-demo-novamach.vercel.app/), build/smoke path | Fictional brand/sample inquiries |
+| [AI Director](https://github.com/zhouey314-cloud/ai_director) | Silence-to-keep-list/EDL/FCPXML prototype; [6 tests / XML-URI repair](https://github.com/zhouey314-cloud/ai_director/pull/1) | Actual editor-import and editing quality unverified |
+| [Voice Clone Video](https://github.com/zhouey314-cloud/voice-clone-video) | Consent-gated dubbing workflow; [synthetic SRT](https://github.com/zhouey314-cloud/voice-clone-video/blob/main/examples/synthetic-subtitles.srt) / offline Mock | Real voices need authorization; quality NOT_TESTED |
+
+## Templates
+
+[Agentic Coding Starter](https://github.com/zhouey314-cloud/agentic-coding-starter) and [AI Delivery Starter Kit](https://github.com/zhouey314-cloud/ai-delivery-starter-kit) provide task, scope, eval and handoff structures. Describe them as reusable templates, never as proof of Agent performance or accepted client delivery.
+
+## Experiments
+
+[AI Content Workflow](https://github.com/zhouey314-cloud/ai-content-workflow): an evidence-to-draft lab with 8 deterministic tests and synthetic fixtures; no company prompt, customer content, real provider or platform posting.
+
+## Legacy / upstream / excluded
+
+- [My Money App](https://github.com/zhouey314-cloud/my-money-app): [16 offline tests](https://github.com/zhouey314-cloud/my-money-app/pull/1) support schema, file-preservation and concurrency mechanics. Real expense extraction, personal ledgers and financial/business acceptance were not tested.
+- [Amazon FBM Agent](https://github.com/zhouey314-cloud/amazon-fbm-agent): [5 MOCK checks](https://github.com/zhouey314-cloud/amazon-fbm-agent/pull/1), fixed outputs and assumptions; no real model, VOC analysis or validated market/profitability conclusion.
+- [dbskill](https://github.com/zhouey314-cloud/dbskill): [dontbesilent upstream](https://github.com/dontbesilent2025/dbskill), [CC BY-NC 4.0 / non-commercial](https://github.com/zhouey314-cloud/dbskill/blob/main/LICENSE). Do not claim authorship of the upstream library or change its license.
+- [GEO legacy](https://github.com/zhouey314-cloud/geo-saas-mvp) remains company/IP **FROZEN** and is excluded from personal original-project claims. BossProVideo, customer/private material and private source-archive counts are not resume product achievements.
 
 ## Claim guardrails
 
-Use “self-built public demo,” “synthetic cases,” “locally verified,” or “manual deployment” where accurate. Do not claim paying customers, production integration, accepted deliveries, model-quality scores, company ownership or revenue from these repositories.
+Use runnable local reference, synthetic case, deterministic test, measured loopback overhead and artifact-specific human approval where accurate. Do not turn tests into model-quality scores, private archive/component counts into production products, assistance into independent leadership, or personal experiments into customers, revenue, staff titles or accepted commercial deliveries.

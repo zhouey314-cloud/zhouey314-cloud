@@ -1,54 +1,36 @@
 # Ethan Zhou
 
-### AI-Native Builder
+### 编导背景 · AI Builder
 
-I turn ambiguous business problems into runnable, testable AI products and workflows — then show the architecture, evidence and limits.
+把内容制作和业务问题做成能运行、能复现、边界清楚的工具。I build practical AI workflows and show the code, evidence and limits.
 
 **Contact / 联系我:** [Telegram @ethanyu520](https://t.me/ethanyu520) · [Email](mailto:zhouey314@gmail.com) · [WeChat QR / 微信二维码](#website--contact)
 
-[Explore six flagships](https://zhouey314-cloud.github.io/projects.html) · [Portfolio evidence](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
+## Selected Work · Three projects
 
-## Selected Work
-
-| Project | What it solves | Stack | Demo | Repository |
+| Project / Problem | Demo | Code | Evidence | Current limit |
 |---|---|---|---|---|
-| **Multi-Tenant Workflow** | Knowledge sharing with tenant isolation and human review gates | Node.js · JavaScript | [Try workflow](https://zhouey314-cloud.github.io/multi-tenant-ai-workflow-saas/) | [Code](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas) |
-| **Enterprise RAG Starter** | Access-filtered retrieval with citations and no-answer behavior | Python · local embeddings | [Lexical demo](https://zhouey314-cloud.github.io/enterprise-rag-starter/) | [Code](https://github.com/zhouey314-cloud/enterprise-rag-starter) |
-| **AI Eval Engineering** | Keeps fixture checks separate from model-quality evidence | Python · JSONL | [Example report](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/example-report.md) | [Code](https://github.com/zhouey314-cloud/ai-eval-engineering) |
-| **Video Workflow Engine** | Asset-gap, real FFmpeg render, QA and human review | Python · FFmpeg | [Synthetic MP4](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/demo-output.mp4) | [Code](https://github.com/zhouey314-cloud/ai-video-workflow-engine) |
-| **AI CRM Sales Copilot** | Shared opportunity, stage, forecast and rule-guidance state | JavaScript · localStorage | [Try CRM](https://zhouey314-cloud.github.io/ai-crm-sales-copilot/) | [Code](https://github.com/zhouey314-cloud/ai-crm-sales-copilot) |
-| **Portable Agent Skills** | Single-purpose, copyable workflows with explicit inputs, outputs and failure paths | Markdown · Python | [Explore ten skills](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills) | [Code](https://github.com/zhouey314-cloud/ai-agent-skills) |
+| **Enterprise RAG** — 让检索回答遵守身份、来源与拒答边界 | [Lexical preview](https://zhouey314-cloud.github.io/enterprise-rag-starter/) | [Repository](https://github.com/zhouey314-cloud/enterprise-rag-starter) | [Local service / ACL](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/3) · [Candidate evals](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/4) | 确定性摘录；两条语义改写漏检，不代表企业质量 |
+| **RelayAudit / AgentGuard** — 被动观察代理协议，同时保留业务响应与已知故障原因 | [Synthetic demo / download](https://github.com/zhouey314-cloud/relay-audit/actions/runs/39608139134) | [Repository](https://github.com/zhouey314-cloud/relay-audit) | [125 tests / stream fix](https://github.com/zhouey314-cloud/relay-audit/pull/2) | 有实测开销；不能验证上游模型身份 |
+| **Video Workflow Engine** — 让素材缺口、渲染、QA、失败退出与人工审片可复现 | [54s original animation](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/c9e698de3880609014b0b83bf349a01dcad3af4d/examples/original_54s/sample.mp4) | [Repository](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | [Sample / review / CI](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/4) | APPROVED 只限此动画样片，不扩展到真人或客户交付 |
 
-## Engineering Focus
+[Visual portfolio](https://zhouey314-cloud.github.io/projects.html) · [Full project index](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
-AI applications · agent workflows · RAG and retrieval · evaluation · automation · product delivery. I prioritize observable behavior over a large repository count: a working path, tests/evals matched to risk, clear failure states and a handoff another person can reproduce.
+## Reproduce and inspect
 
-## How I Build
+- **RAG:** [local architecture / trust boundary](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/adr-local-rag.md), [existing lexical UI screenshot](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/images/demo-query.png), and [local CLI / HTTP QuickStart](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/local-quickstart.md). `python local_service.py init` starts a new local index; follow the QuickStart for fictional sources and private token files. The browser preview is lexical and does not demonstrate authenticated local-service access. 48 Python + 10 Node tests pass; the existing 4 lexical / 9 answerability cases are retained. The synthetic_unverified local candidate run is 60/62 over 56 distinct questions (required lexical-contract cases 60/60), with two semantic-paraphrase misses preserved and zero real-model calls. The user confirmed completing review of all 62 cases; no per-case adjudication or expected-answer edits are inferred. Provenance remains synthetic_unverified, not an independently verified Golden Set; enterprise and semantic quality are unverified.
+- **RelayAudit:** `Agent → fixed-route proxy → configured upstream`, with independent bounded parser/detector queues and separate notifications. [Protocol / source](https://github.com/zhouey314-cloud/relay-audit/blob/main/relay_audit/guard/proxy.py) · [five-minute synthetic QuickStart](https://github.com/zhouey314-cloud/relay-audit/blob/main/examples/guard-synthetic/README.md). Run `python -m relay_audit guard demo --out agentguard-demo/profile-001` in a fresh output directory. C1/N100 and C8/N200 measurements retain p50/p95, throughput and Python peak allocations; zero extra model requests does not mean zero latency or 100% performance.
+- **Video:** [architecture](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/architecture.md) · [nine-shot contact sheet](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/contact-sheet.jpg) · [sample commands and rights manifest](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/README.md). Generate via `python examples/original_54s/generate.py --output output/original54 --font /path/to/licensed-font.ttc`, then use the linked FFmpeg workflow command. 47 tests pass. The exact 54-second, nine-shot original animation is user-viewed APPROVED; [artifact-specific review](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/human-review.json) pins SHA256 `0a7f73e9a5a014a352aa5f27a2852b39e558546ccc38f93016785cf2fba0e1a9`. It is animation, not real-person talking-head footage or customer/model/commercial acceptance.
 
-`Context → Scope → Build → Test → Eval where needed → Human Review → Ship → Reuse`
+Each repository records mechanical tests separately from AI evaluation and human acceptance. These are personal tools, prototypes and demos; no customer production, commercial success or model-identity accuracy is implied.
 
-The [project index](PORTFOLIO.md) gives status, stack and evidence. Each flagship repository has a case study, resume bullets and interview notes. Synthetic examples and disconnected integrations are labelled in their respective repositories.
+## Other work and boundaries
 
-## Recent engineering verification · 2026-10-21
+The [portfolio index](PORTFOLIO.md) retains the original sixteen public project sources, grouped as other flagships, supporting work, templates and experiments. It also labels legacy prototypes and upstream-derived work. Private source archives and their component directories are not counted as production products.
 
-- [Video CLI repair](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/2): 36 tests, failure exit codes and a real six-second synthetic FFmpeg render; human video approval remains pending.
-- [RAG answerability repair](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/1): 23 Python + 10 Node tests, with 4 lexical retrieval and 9 answerability cases reported separately; no real-model quality claim.
-- [Thought-to-X delivery repair](https://github.com/zhouey314-cloud/thought-to-x/pull/1): 13 offline tests and a working installed-wheel prompt-only path; existing assembled prompts remain byte-identical.
+`dbskill` is third-party work from [dontbesilent](https://github.com/dontbesilent2025/dbskill), under [CC BY-NC 4.0 / non-commercial terms](https://github.com/zhouey314-cloud/dbskill/blob/main/LICENSE). I do not present it as an original project or change its license. Company/client material, GEO work under IP review and private voices/data stay outside original Selected Work.
 
-[All current project evidence](PORTFOLIO.md) includes tenant-policy, CRM persistence, eval-validator and RelayAudit fixes. Public demos, synthetic fixtures and private work retain their separate limits.
-
-## Active Development
-
-| Project | Current status / version | Current issue | Next milestone |
-|---|---|---|---|
-| [Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | Offline synthetic tool; source `0.1.0` (historical GitHub demo Release `v1.0.0`) | CLI failure states now have process regressions; real-media/human acceptance and version decision remain | Reproducible asset validation and human-reviewed render |
-| [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) | Public lexical demo + optional local semantic/hybrid; source unversioned (historical demo Release `v1.0.0`) | Source-backed answerability regressions cover missing facts; broader human-reviewed/model quality is `NOT_RUN` | Human-reviewed answerability regression set |
-
-The other four flagships remain in [Selected Work](#selected-work); [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills) retains its contribution path and offline checks. Supporting work and maintenance categories are in the [project index](PORTFOLIO.md).
-
-## Writing / Open Source
-
-I publish practical notes and reusable artifacts from work I can explain and verify. The [visual project tour](https://zhouey314-cloud.github.io/projects.html) is the quickest way in; the repositories contain the deeper technical evidence. Upstream-derived projects such as `dbskill` are not presented as my original work.
+I am interested in AI application engineering, retrieval, evaluation, automation and content workflows. The practical standard is a runnable path, evidence matched to risk, explicit failure states and a handoff another person can reproduce.
 
 ## Website / Contact
 
