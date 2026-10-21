@@ -54,7 +54,7 @@ Pick two or three projects for a specific role. These are evidence notes and dra
 - **Problem:** Agent workflows are hard to reuse when inputs, outputs and failure paths are implicit.
 - **Action:** Wrote ten single-purpose, clean-room skill contracts.
 - **Engineering:** Markdown workflows plus offline Python structure and synthetic-fixture checks.
-- **Evidence:** [Skill catalog](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills) and [examples](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/examples).
+- **Evidence:** [Skill catalog](https://github.com/zhouey314-cloud/ai-agent-skills/tree/main/skills): 10 skills + 3 synthetic fixtures checked under normal and optimized Python; [two validator regressions](https://github.com/zhouey314-cloud/ai-agent-skills/pull/2) prevent validation from disappearing with `-O`.
 - **Boundary:** Provider-backed model quality and real user adoption are NOT_RUN.
 - **Resume bullet:** Authored ten reusable agent workflow contracts with explicit inputs, outputs and failure paths, backed by offline validation and synthetic examples.
 
@@ -83,8 +83,8 @@ Pick two or three projects for a specific role. These are evidence notes and dra
 - **Problem:** Personal notes need a fast local capture and search path without broad vault access.
 - **Action:** Built capture and keyword-search flows for a selected vault.
 - **Engineering:** Local filesystem handling and a demo vault keep the interface inspectable.
-- **Evidence:** [Interface screenshot](https://github.com/zhouey314-cloud/obsidian-ai-inbox/blob/main/docs/inbox-demo.png) and 64 local tests.
-- **Boundary:** Private vault data stays on device; no claim of reading an entire Obsidian installation.
+- **Evidence:** [Interface screenshot](https://github.com/zhouey314-cloud/obsidian-ai-inbox/blob/main/docs/inbox-demo.png) and [70 executions across 39 unique cases, including three hidden-dotfile privacy negatives](https://github.com/zhouey314-cloud/obsidian-ai-inbox/pull/1).
+- **Boundary:** Selected-vault access excludes hidden dotfiles; private vault data stays on device. No claim of reading an entire Obsidian installation.
 - **Resume bullet:** Built a local Obsidian inbox for selected-vault capture and keyword search, with a demo vault and local tests.
 
 ### NovaMach
@@ -101,8 +101,8 @@ Pick two or three projects for a specific role. These are evidence notes and dra
 - **Problem:** Silence-based cuts need a timeline that can be inspected and exchanged with editing tools.
 - **Action:** Built an offline media/timeline prototype around a synthetic sample.
 - **Engineering:** FFmpeg detection feeds a keep-list, EDL and FCPXML; SRT requires transcription input.
-- **Evidence:** [Synthetic example and EDL](https://github.com/zhouey314-cloud/ai_director/tree/main/examples), timeline regression tests and local CLI smoke.
-- **Boundary:** Prototype only; edit quality and optional provider integration are unverified.
+- **Evidence:** [Synthetic example and EDL](https://github.com/zhouey314-cloud/ai_director/tree/main/examples), [six tests and FCPXML XML/URI path checks](https://github.com/zhouey314-cloud/ai_director/pull/1).
+- **Boundary:** Prototype only; no actual editor-import acceptance. Edit quality and optional provider integration remain unverified.
 - **Resume bullet:** Built a media timeline prototype that converts detected silence into inspectable keep-lists and editing interchange files, with timestamp regression checks.
 
 ### RelayAudit / AgentGuard
