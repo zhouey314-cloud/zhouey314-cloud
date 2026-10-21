@@ -29,12 +29,20 @@ AI applications · agent workflows · RAG and retrieval · evaluation · automat
 
 The [project index](PORTFOLIO.md) gives status, stack and evidence. Each flagship repository has a case study, resume bullets and interview notes. Synthetic examples and disconnected integrations are labelled in their respective repositories.
 
+## Recent engineering verification · 2026-10-21
+
+- [Video CLI repair](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/2): 36 tests, failure exit codes and a real six-second synthetic FFmpeg render; human video approval remains pending.
+- [RAG answerability repair](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/1): 23 Python + 10 Node tests, with 4 lexical retrieval and 9 answerability cases reported separately; no real-model quality claim.
+- [Thought-to-X delivery repair](https://github.com/zhouey314-cloud/thought-to-x/pull/1): 13 offline tests and a working installed-wheel prompt-only path; existing assembled prompts remain byte-identical.
+
+[All current project evidence](PORTFOLIO.md) includes tenant-policy, CRM persistence, eval-validator and RelayAudit fixes. Public demos, synthetic fixtures and private work retain their separate limits.
+
 ## Active Development
 
 | Project | Current status / version | Current issue | Next milestone |
 |---|---|---|---|
-| [Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | Offline synthetic tool; source `0.1.0` (historical GitHub demo Release `v1.0.0`) | Real-media validation and independent human acceptance are missing; version history needs a decision | Reproducible asset validation and human-reviewed render |
-| [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) | Public lexical demo + optional local semantic/hybrid; source unversioned (historical demo Release `v1.0.0`) | A valid citation can still accompany a non-answer; model answer quality is `NOT_RUN` | Human-reviewed answerability regression set |
+| [Video Workflow Engine](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | Offline synthetic tool; source `0.1.0` (historical GitHub demo Release `v1.0.0`) | CLI failure states now have process regressions; real-media/human acceptance and version decision remain | Reproducible asset validation and human-reviewed render |
+| [Enterprise RAG Starter](https://github.com/zhouey314-cloud/enterprise-rag-starter) | Public lexical demo + optional local semantic/hybrid; source unversioned (historical demo Release `v1.0.0`) | Source-backed answerability regressions cover missing facts; broader human-reviewed/model quality is `NOT_RUN` | Human-reviewed answerability regression set |
 
 The other four flagships remain in [Selected Work](#selected-work); [Portable Agent Skills](https://github.com/zhouey314-cloud/ai-agent-skills) retains its contribution path and offline checks. Supporting work and maintenance categories are in the [project index](PORTFOLIO.md).
 
