@@ -66,3 +66,13 @@ Pick two or three projects appropriate to a role. These are evidence-backed engi
 ## Claim guardrails
 
 Use runnable local reference, synthetic case, deterministic test, measured loopback overhead and artifact-specific human approval where accurate. Do not turn tests into model-quality scores, private archive/component counts into production products, assistance into independent leadership, or personal experiments into customers, revenue, staff titles or accepted commercial deliveries.
+
+## 2026-10-30 可引用的工程贡献
+
+- 将本地 RAG 的 phone/email 缺值误答修复接入原有回归，新增 SQLite 在线备份、独立恢复和健康检查。
+- 为 AgentGuard 增加业务请求容量和显式 503，验证挂起 SSE、恢复和上游请求数量。
+- 为 FFmpeg 工作流增加每任务交付包、输入/输出哈希、失败回收与本地校验器。
+- 修复多租户演示服务写盘失败后内存仍保留修改的问题；用候选状态提交和真实 HTTP 重启回归验证。
+- 将 eval 仓库从数据格式校验扩展为已记录响应与工具轨迹的机械规则执行和版本差异报告。
+
+以上为个人开源实现和离线/loopback 验证，不推导客户投产或真实模型效果。

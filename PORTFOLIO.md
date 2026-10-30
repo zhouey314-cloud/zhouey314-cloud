@@ -2,7 +2,7 @@
 
 [Visual portfolio](https://zhouey314-cloud.github.io/projects.html) · [Profile](README.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
 
-This index distinguishes personal engineering evidence, demos, templates, legacy code and upstream sources. `LOCAL_RUNNABLE`, `OFFLINE_TOOL`, `LIVE_DEMO` and `EXPERIMENT` describe a bounded path, never customer production or accepted AI quality. Evidence snapshot: 2026-10-21.
+This index distinguishes personal engineering evidence, demos, templates, legacy code and upstream sources. `LOCAL_RUNNABLE`, `OFFLINE_TOOL`, `LIVE_DEMO` and `EXPERIMENT` describe a bounded path, never customer production or accepted AI quality. Historical evidence snapshot: 2026-10-21. Current engineering increment: 2026-10-30, below.
 
 ## Selected three
 
@@ -70,3 +70,15 @@ This index distinguishes personal engineering evidence, demos, templates, legacy
 - Private personal source archives and component directories retain their own provenance, license and test boundaries. They are not public product launches or production deliveries; this index does not expose their runtime data.
 
 The original sixteen public project sources remain represented above: 3 selected + 4 other flagships + 6 supporting + 2 templates + 1 experiment. Infrastructure: [Profile repository](https://github.com/zhouey314-cloud/zhouey314-cloud) and [website repository](https://github.com/zhouey314-cloud/zhouey314-cloud.github.io).
+
+## 2026-10-30 工程增量
+
+| 项目 | 已实现与复现入口 | 本轮本地验证 |
+|---|---|---|
+| RAG | [备份、恢复、doctor 与 phone/email 值检查](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/OPERATIONS.md) | 55 Python + 36 Node；原 62 候选期望不变，必需 60/60，完整 60/62 |
+| AgentGuard | [并发容量、503 与重复凭据拒绝](https://github.com/zhouey314-cloud/relay-audit/blob/main/docs/CAPACITY.md) | 128 回归；并发 4 / 每档 30 的 loopback 合成验收 |
+| Video | [每任务交付包与校验](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/DELIVERY_BUNDLES.md) | 56 测试，含真实 FFmpeg 编码/完整解码 |
+| Multi-tenant workflow | [事务持久化与 HTTP 错误契约](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas/blob/main/docs/HTTP_API.md) | 14 测试，含磁盘故障回滚与重启 |
+| Eval engineering | [响应与轨迹规则、baseline 比较](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/RECORDED_EVAL.md) | 12 测试、5 条手写记录的机械示例；模型质量未评测 |
+
+这些增量改善可运行性、故障处理和交付证据。其余项目按原有阶段展示，历史测试数字保留其日期；没有新增客户、职位、收入、生产 SLA 或模型质量结论。

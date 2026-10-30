@@ -1,24 +1,33 @@
-# Ethan Zhou
+# 恩宇 / Ethan Zhou
 
-### 编导背景 · AI 应用与工作流开发
+**AI 应用与工作流开发。把一个具体问题，推进到能运行、能验证、能交接。**
 
-把内容制作和业务问题做成能运行、能复现、边界清楚的工具。I build practical AI workflows and show the code, evidence and limits.
+中原工学院广播电视编导专业本科在读，现居郑州。自 2026 年 6 月参与企业 GEO 与 AI 应用实践。编导训练让我先理解人和场景；工程工作里，我关注数据从哪里来、请求如何流转、失败如何处理、结果如何验收。
 
-中原工学院 · 广播电视编导 · 本科在读。
+[作品网站](https://zhouey314-cloud.github.io/) · [操作三个重点作品](https://zhouey314-cloud.github.io/workbench.html) · [简历](https://zhouey314-cloud.github.io/resume.html) · [联系合作](#website--contact)
 
-[正式简历](https://zhouey314-cloud.github.io/resume.html) · [作品网站](https://zhouey314-cloud.github.io/)
+## 可以一起解决什么问题
 
-**Contact / 联系我:** [Telegram @ethanyu520](https://t.me/ethanyu520) · [Email](mailto:zhouey314@gmail.com) · [WeChat QR / 微信二维码](#website--contact)
+| 你的问题 | 我能承担的实现 | 可检查的交付 |
+|---|---|---|
+| 资料分散，回答难以追溯 | 整理文档结构，接入本地检索，处理版本、权限与引用 | CLI/HTTP、资料与权限说明、固定回归、备份恢复步骤 |
+| AI 接口偶发失败，缺少排查线索 | 集成 HTTP/SSE，区分超时、取消、协议与容量问题 | 本地网关、元数据报告、复现脚本、故障恢复说明 |
+| 内容制作依赖手动串流程 | 串接素材清单、时间轴、字幕、FFmpeg 和媒体检查 | 可重跑任务、校验清单、交付包、人工审片入口 |
+| 改过 AI 工作流，却说不清有没有改善 | 建立用例/响应记录、执行机械约束、对比失败与回归 | 版本报告、可复跑命令、待人工确认的问题 |
 
-## Selected Work · Three projects
+适合从范围明确的原型、内部工具或现有流程改造开始。先对齐问题、可用资料和验收目标，再交付最小可运行版本与交接记录。涉及真实模型、生产身份或客户数据时，需要在具体项目中完成相应验证。
 
-| Project / Problem | Demo | Code | Evidence | Current limit |
-|---|---|---|---|---|
-| **Enterprise RAG** — 让检索回答遵守身份、来源与拒答边界 | [Lexical preview](https://zhouey314-cloud.github.io/enterprise-rag-starter/) | [Repository](https://github.com/zhouey314-cloud/enterprise-rag-starter) | [Local service / ACL](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/3) · [Candidate evals](https://github.com/zhouey314-cloud/enterprise-rag-starter/pull/4) | 确定性摘录；两条语义改写漏检，不代表企业质量 |
-| **RelayAudit / AgentGuard** — 被动观察代理协议，同时保留业务响应与已知故障原因 | [在线合成报告](https://github.com/zhouey314-cloud/relay-audit/blob/v0.2.1/examples/guard-synthetic/report.md) · [下载复现](https://github.com/zhouey314-cloud/relay-audit/releases/tag/v0.2.1) | [Repository](https://github.com/zhouey314-cloud/relay-audit) | [Protocol regression / stream fix](https://github.com/zhouey314-cloud/relay-audit/pull/2) | 有实测开销；不能验证上游模型身份 |
-| **Video Workflow Engine** — 让素材缺口、渲染、QA、失败退出与人工审片可复现 | [54s original animation](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/c9e698de3880609014b0b83bf349a01dcad3af4d/examples/original_54s/sample.mp4) | [Repository](https://github.com/zhouey314-cloud/ai-video-workflow-engine) | [Sample / review / CI](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/4) | APPROVED 只限此动画样片，不扩展到真人或客户交付 |
+## 三个代表工程
 
-[Visual portfolio](https://zhouey314-cloud.github.io/projects.html) · [Full project index](PORTFOLIO.md) · [Resume Project Bank](RESUME_PROJECT_BANK.md)
+| 工程 | 我实现的部分 | 直接查看 |
+|---|---|---|
+| **Enterprise RAG Starter** | 三格式文档入库、版本/生效期、身份过滤、引用与拒答、SQLite 备份恢复 | [源码](https://github.com/zhouey314-cloud/enterprise-rag-starter) · [运维流程](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/OPERATIONS.md) · [在线操作](https://zhouey314-cloud.github.io/workbench.html#rag) |
+| **RelayAudit / AgentGuard** | 固定上游代理、HTTP/SSE 保真、独立观察队列、容量控制、异常报告 | [源码](https://github.com/zhouey314-cloud/relay-audit) · [容量与故障](https://github.com/zhouey314-cloud/relay-audit/blob/main/docs/CAPACITY.md) · [报告检查器](https://zhouey314-cloud.github.io/workbench.html#relay) |
+| **AI Video Workflow Engine** | 素材/时间轴/字幕、真实渲染与 QA、可校验交付包、人工审片门禁 | [源码](https://github.com/zhouey314-cloud/ai-video-workflow-engine) · [交付包](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/DELIVERY_BUNDLES.md) · [54 秒原创动画](https://zhouey314-cloud.github.io/workbench.html#video) |
+
+公开网页 RAG 为合成资料上的词法检索；网关报告不确认真实模型身份；动画样片的人工批准只适用于其确切文件。工程证据与适用范围在各仓库相邻说明。
+
+[本轮工程审查](ENGINEERING_STATUS.md) · [全部项目与阶段](PORTFOLIO.md) · [项目贡献记录](RESUME_PROJECT_BANK.md) · [多租户 HTTP 工程](https://github.com/zhouey314-cloud/multi-tenant-ai-workflow-saas/blob/main/docs/HTTP_API.md) · [响应评测器](https://github.com/zhouey314-cloud/ai-eval-engineering/blob/main/docs/RECORDED_EVAL.md)
 
 ## Reproduce and inspect
 
@@ -54,4 +63,4 @@ I am interested in AI application engineering, retrieval, evaluation, automation
 
 微信扫码添加 Ethan 恩宇。
 
-Open to discussing AI product engineering, FDE-style implementation and evidence-first delivery. Public demos are not claims of customer production use.
+可以直接带着一个具体问题来聊：现在哪一步最费时间、有哪些资料和系统、怎样算做成。我会据此拆解可交付范围与验收方式。
