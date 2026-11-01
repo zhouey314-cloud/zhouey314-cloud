@@ -1,6 +1,6 @@
 # Resume Project Bank
 
-Pick two or three projects appropriate to a role. These are evidence-backed engineering notes for a 编导 / AI Builder; demo evidence does not imply customer adoption or accepted commercial delivery. [Full index and sources](PORTFOLIO.md).
+Pick two or three projects appropriate to a role. These are evidence-backed engineering notes for AI application and workflow development; demo evidence does not imply customer adoption or accepted commercial delivery. [Full index and sources](PORTFOLIO.md).
 
 ## Selected three
 
@@ -24,7 +24,7 @@ Pick two or three projects appropriate to a role. These are evidence-backed engi
 
 - **Problem / action:** Turn asset gaps, rendering failures, QA and packaging into reproducible CLI outcomes while retaining a human viewing gate.
 - **Engineering:** Python / FFmpeg, asset validation, output consistency and pack-safe delivery; [architecture](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/architecture.md).
-- **Demo / evidence:** [54-second original animation](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/c9e698de3880609014b0b83bf349a01dcad3af4d/examples/original_54s/sample.mp4), [source / assets / rights](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/README.md), [sample PR](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/4). 47 tests pass. The exact 54-second, nine-shot original animation is user-viewed APPROVED; [artifact-specific review](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/human-review.json) pins SHA256 `0a7f73e9a5a014a352aa5f27a2852b39e558546ccc38f93016785cf2fba0e1a9`. It is animation, not real-person talking-head footage or customer/model/commercial acceptance.
+- **Demo / evidence:** [54-second original animation](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/c9e698de3880609014b0b83bf349a01dcad3af4d/examples/original_54s/sample.mp4), [source / assets / rights](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/README.md), [sample PR](https://github.com/zhouey314-cloud/ai-video-workflow-engine/pull/4). The [2026-10-30 source CI](https://github.com/zhouey314-cloud/ai-video-workflow-engine/actions/runs/40997957439) passed 56 tests, including delivery-bundle checks. The exact 54-second, nine-shot original animation is user-viewed APPROVED; [artifact-specific review](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/human-review.json) pins SHA256 `0a7f73e9a5a014a352aa5f27a2852b39e558546ccc38f93016785cf2fba0e1a9`. It is animation, not real-person talking-head footage or customer/model/commercial acceptance.
 - **Boundary:** The approved artifact is one specific animation, not real-person/client editing, publishing or commercial acceptance.
 - **Draft bullet:** Built and tested an offline video workflow with reliable process failures, reproducible FFmpeg output and a rights-documented animation sample; retained artifact-specific human approval.
 

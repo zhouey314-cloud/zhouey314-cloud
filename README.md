@@ -2,9 +2,9 @@
 
 **AI 应用与工作流开发。把一个具体问题，推进到能运行、能验证、能交接。**
 
-中原工学院广播电视编导专业本科在读，现居郑州。自 2026 年 6 月参与企业 GEO 与 AI 应用实践。编导训练让我先理解人和场景；工程工作里，我关注数据从哪里来、请求如何流转、失败如何处理、结果如何验收。
+我是恩宇，现居郑州，自 2026 年 6 月参与企业 GEO 与 AI 应用实践。我用 Python 做知识检索、AI 接口集成和内容工作流，关注资料的出处、请求的流转、失败的处理，以及交付后能否由别人继续运行。
 
-[作品网站](https://zhouey314-cloud.github.io/) · [操作三个重点作品](https://zhouey314-cloud.github.io/workbench.html) · [简历](https://zhouey314-cloud.github.io/resume.html) · [联系合作](#website--contact)
+[作品网站](https://zhouey314-cloud.github.io/) · [操作三个重点作品](https://zhouey314-cloud.github.io/workbench.html) · [简历](https://zhouey314-cloud.github.io/resume.html) · [合作方式与交付范围](https://zhouey314-cloud.github.io/collaborate.html) · [直接联系](#website--contact)
 
 ## 可以一起解决什么问题
 
@@ -16,6 +16,8 @@
 | 改过 AI 工作流，却说不清有没有改善 | 建立用例/响应记录、执行机械约束、对比失败与回归 | 版本报告、可复跑命令、待人工确认的问题 |
 
 适合从范围明确的原型、内部工具或现有流程改造开始。先对齐问题、可用资料和验收目标，再交付最小可运行版本与交接记录。涉及真实模型、生产身份或客户数据时，需要在具体项目中完成相应验证。
+
+你可以带着现有流程、脱敏样例和一个验收目标来聊。我们先确认输入、输出和依赖，再拆解实现范围；交付包含运行命令、测试记录、已知限制与交接说明。详见[合作方式](https://zhouey314-cloud.github.io/collaborate.html)。
 
 ## 三个代表工程
 
@@ -37,7 +39,7 @@
 
 - **RAG:** [local architecture / trust boundary](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/adr-local-rag.md), [existing lexical UI screenshot](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/images/demo-query.png), and [local CLI / HTTP QuickStart](https://github.com/zhouey314-cloud/enterprise-rag-starter/blob/main/docs/local-quickstart.md). `python local_service.py init` starts a new local index; follow the QuickStart for fictional sources and private token files. The browser preview is lexical and does not demonstrate authenticated local-service access. The pre-repair `45e2daa8` baseline passed 48 Python + 10 Node tests and 4 lexical / 9 answerability cases; current excerpt-fix results are recorded in the [repository verification section](https://github.com/zhouey314-cloud/enterprise-rag-starter#eval-and-verification). The recorded synthetic_unverified local candidate run is 60/62 over 56 distinct questions (required lexical-contract cases 60/60), with two semantic-paraphrase misses preserved and zero real-model calls. The user confirmed completing review of all 62 cases; no per-case adjudication or expected-answer edits are inferred. Provenance remains synthetic_unverified, not an independently verified Golden Set; enterprise and semantic quality are unverified.
 - **RelayAudit:** `Agent → fixed-route proxy → configured upstream`, with independent bounded parser/detector queues and separate notifications. [Protocol / source](https://github.com/zhouey314-cloud/relay-audit/blob/main/relay_audit/guard/proxy.py) · [five-minute synthetic QuickStart](https://github.com/zhouey314-cloud/relay-audit/blob/main/examples/guard-synthetic/README.md). Run `python -m relay_audit guard demo --out agentguard-demo/profile-001` in a fresh output directory. [Original Actions evidence](https://github.com/zhouey314-cloud/relay-audit/actions/runs/39608139134) is retained; its downloadable artifact has finite retention and is not the stable demo entry. C1/N100 and C8/N200 measurements retain p50/p95, throughput and Python peak allocations; zero extra model requests does not mean zero latency or 100% performance.
-- **Video:** [architecture](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/architecture.md) · [nine-shot contact sheet](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/contact-sheet.jpg) · [sample commands and rights manifest](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/README.md). Generate via `python examples/original_54s/generate.py --output output/original54 --font /path/to/licensed-font.ttc`, then use the linked FFmpeg workflow command. 47 tests pass. The exact 54-second, nine-shot original animation is user-viewed APPROVED; [artifact-specific review](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/human-review.json) pins SHA256 `0a7f73e9a5a014a352aa5f27a2852b39e558546ccc38f93016785cf2fba0e1a9`. It is animation, not real-person talking-head footage or customer/model/commercial acceptance.
+- **Video:** [architecture](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/docs/architecture.md) · [nine-shot contact sheet](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/contact-sheet.jpg) · [sample commands and rights manifest](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/README.md). Generate via `python examples/original_54s/generate.py --output output/original54 --font /path/to/licensed-font.ttc`, then use the linked FFmpeg workflow command. The [2026-10-30 source CI](https://github.com/zhouey314-cloud/ai-video-workflow-engine/actions/runs/40997957439) passed 56 tests, including delivery-bundle checks. The exact 54-second, nine-shot original animation is user-viewed APPROVED; [artifact-specific review](https://github.com/zhouey314-cloud/ai-video-workflow-engine/blob/main/examples/original_54s/human-review.json) pins SHA256 `0a7f73e9a5a014a352aa5f27a2852b39e558546ccc38f93016785cf2fba0e1a9`. It is animation, not real-person talking-head footage or customer/model/commercial acceptance.
 
 </details>
 
@@ -63,4 +65,4 @@ I am interested in AI application engineering, retrieval, evaluation, automation
 
 微信扫码添加 Ethan 恩宇。
 
-可以直接带着一个具体问题来聊：现在哪一步最费时间、有哪些资料和系统、怎样算做成。我会据此拆解可交付范围与验收方式。
+可以直接带着一个具体问题来聊：现在哪一步最费时间、有哪些资料和系统、怎样算做成。我会据此拆解可交付范围与验收方式。[先看合作方式与交付范围](https://zhouey314-cloud.github.io/collaborate.html)。
