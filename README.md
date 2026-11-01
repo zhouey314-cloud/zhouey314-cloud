@@ -4,7 +4,7 @@
 
 我是恩宇，现居郑州，自 2026 年 6 月参与企业 GEO 与 AI 应用实践。我用 Python 做知识检索、AI 接口集成和内容工作流，关注资料的出处、请求的流转、失败的处理，以及交付后能否由别人继续运行。
 
-[作品网站](https://zhouey314-cloud.github.io/) · [操作三个重点作品](https://zhouey314-cloud.github.io/workbench.html) · [简历](https://zhouey314-cloud.github.io/resume.html) · [合作方式与交付范围](https://zhouey314-cloud.github.io/collaborate.html) · [直接联系](#website--contact)
+[作品网站](https://zhouey314-cloud.github.io/) · [操作三个重点作品](https://zhouey314-cloud.github.io/workbench.html) · [简历](https://zhouey314-cloud.github.io/resume.html) · [合作方式与交付范围](https://zhouey314-cloud.github.io/collaborate.html) · [直接联系](https://zhouey314-cloud.github.io/#contact)
 
 ## 可以一起解决什么问题
 
